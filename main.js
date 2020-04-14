@@ -11,8 +11,8 @@ function selectType(type) {
     var selected = $(`input[name='${type}']:checked`);
     if (selected.length != 0) {
         unselected = $(`input[name='${type}']:not(:checked)`);
-        selected.parent().parent().css({"background-color":"black","outline":"black solid 4px"});
-        unselected.parent().parent().css({"background-color":"grey","outline":"none"});
+        selected.parent().parent().css({"outline":"green solid 4px"});
+        unselected.parent().parent().css({"outline":"grey solid 2px"});
         selected = null;
     }
 }
@@ -149,3 +149,18 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+// /*
+//  * Javascript focus (option 1)
+//  */
+// $.getJSON("data.json", function(data) {
+
+//     // update title
+//     $("title").text(data.title);
+
+//     data.questions
+
+
+// }
