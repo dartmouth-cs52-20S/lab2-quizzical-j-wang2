@@ -1,4 +1,4 @@
-
+// called when input button is selected, calls functions to change css
 $("input").click(function(){
      selectType("colors");
      selectType("activities");
@@ -6,22 +6,7 @@ $("input").click(function(){
      selectType("apparel");
  });
 
-// function to get selected value
-// adapted from https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/
-function displayRadioValue() { 
-    var selected = $("input[type='radio']:checked");
-    var other = $("input[type='radio']:unchecked");
-      
-    for(i = 0; i < selected.length; i++) { 
-        if(ele[i].checked) 
-        document.getElementById("result").innerHTML
-                = "Gender: "+ele[i].value; 
-    } 
-}
-
-
-// colors, activities, office, apparel
-
+// changes CSS, called when an input button is selected
 function selectType(type) {
     var selected = $(`input[name='${type}']:checked`);
     if (selected.length != 0) {
@@ -31,8 +16,6 @@ function selectType(type) {
         selected = null;
     }
 }
-
-
 
 // Suggested in lab2 assignment
 $('#result-btn').on('click', function(e) {
@@ -45,18 +28,14 @@ $('#result-btn').on('click', function(e) {
     // you'll need to do some calculations with this
     // a naive approachf would be to just choose the most common option - seems reasonable
 
-    console.log("length:" + choices.length);
-    console.log(choices);
     if (choices.length == 4){
         console.log(mode(choices));
-        // FIX - need to check if length of choices array is the same as num questions
         $("#full-phrase").text(getResultArray(mode(choices))[0]);
         $("#result-img").attr("src", getResultArray(mode(choices))[1]);
     } else{
         console.log("?s answered: " + choices.length);
         console.log(getResultArray("error"));
         $("#full-phrase").text(getResultArray("error")[0]);
-
     }
 });
 
@@ -142,7 +121,7 @@ function mode(array)
 }
 
 /*
- * MOdal functionality
+ * Modal functionality
  * adapted from https://www.w3schools.com/howto/howto_css_modals.asp
  */ 
 // Get the modal

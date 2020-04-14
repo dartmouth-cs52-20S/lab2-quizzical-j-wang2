@@ -22,10 +22,6 @@
     align-items: flex-start;
     width: 90%;
 }
-/* .flex-container header:last-child{
-    align-items: center;
-} */
-
 
 .flex-container.question{
     background-color: rgb(83, 126, 83);
@@ -53,7 +49,7 @@ h1{
 
 
 input[type=radio]{
-    /* display:none; */
+    display:none;
     color: white;
 }
 div.spacer{
@@ -76,7 +72,6 @@ nav {
     color:red;
     font-weight: bold;
     text-align: left;
-    /* padding:  */
 }
  img{
      padding: 0;
