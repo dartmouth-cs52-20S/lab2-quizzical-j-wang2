@@ -5,21 +5,34 @@ $('#result-btn').on('click', function(e) {
     var choices = $("input[type='radio']:checked").map(function(i, radio) {
       return $(radio).val();
     }).toArray();
-    
+
     // now you have an array of choices = ["valueofradiobox1", "valueofradiobox2", "valueofradiobox2"]
     // you'll need to do some calculations with this
     // a naive approach would be to just choose the most common option - seems reasonable
 
-    console.log(mode(choices));
-    $("#full-phrase").text(getResultSentence(mode(choices))[0]);
-    $("#result-img").attr("src", getResultSentence(mode(choices))[1]);
+    console.log(choices.length);
+    if (choices.length === 3){
+        console.log(mode(choices));
+        // FIX - need to check if length of choices array is the same as num questions
+        $("#full-phrase").text(getResultArray(mode(choices))[0]);
+        $("#result-img").attr("src", getResultArray(mode(choices))[1]);
+    } else{
+        console.log("?s answered: " + choices.length);
+        console.log(getResultArray("error")[0]);
+        $("#full-phrase").text(getResultArray("error")[0]);
+
+    }
 });
 
-function getResultSentence(choice) {
+/*
+ * Function to return full name & image
+ * - takes keyword as input
+ */
+function getResultArray(choice) {
     let resultarray = [];
-    console.log("choice" + choice);
     var fullphrase;
     var img;
+    console.log(choice);
     
     switch(choice){
         case "hanlon":
@@ -53,8 +66,13 @@ function getResultSentence(choice) {
             img = "https://news.dartmouth.edu/sites/dart_news.prod/files/styles/slide/public/news/images/green-fall-orienteering-810.jpg?itok=z-ibrncS";
             break;
 
+        case "error":
+            fullphrase = "Please answer all questions!";
+            img = null;
+            break;
         default:
             fullphrase = "Something went wrong - please try again!";
+            img = null;
             break;
     }
     resultarray[0] = fullphrase;
@@ -87,9 +105,10 @@ function mode(array)
     return maxEl;
 }
 
-// 
-// https://www.w3schools.com/howto/howto_css_modals.asp
-
+/*
+ * MOdal functionality
+ * adapted from https://www.w3schools.com/howto/howto_css_modals.asp
+ */ 
 // Get the modal
 var modal = document.getElementById("result-modal");
 
