@@ -14,7 +14,6 @@
     justify-content: center;
     flex-direction: row;
     width: 100%;
-
 }
 
 .flex-container header{
@@ -23,6 +22,10 @@
     align-items: flex-start;
     width: 90%;
 }
+/* .flex-container header:last-child{
+    align-items: center;
+} */
+
 
 .flex-container.question{
     background-color: rgb(83, 126, 83);
@@ -75,21 +78,24 @@ nav {
     text-align: left;
     /* padding:  */
 }
+ img{
+     padding: 0;
+     margin: 0;
+ }
 
-
-.img-option{
-    width: 150px;
-    height: 225px;
+.office-img{
+    width: 100%;
+    height: 75%;
 }
 
 .activity-img{
-    width: 225px;
-    height: 150px;
+    width: 100%;
+    height: 50%;
 }
 
 .apparel-img{
-    width:225px;
-    height:225px;
+    width:100%;
+    height:70%;
 }
 
 fieldset{
@@ -97,7 +103,7 @@ fieldset{
     padding: 5px;
     border: 5px solid rgb(83, 126, 83);
     margin: 10px;
-
+    width: 90%;
 }
 
 /* For Color tiles */
@@ -132,13 +138,19 @@ fieldset{
 
 
 .answer-tile{
-    width: 35%;
+    width: 30%;
+    /* height: 30%; */
     margin: 10px;
-    /* margin: 10px; */
+    /* border: 10px; */
     display: flex;
     font-weight: bold;
     justify-content: center;
-    /* margin: 10px; */
+    background-color:black;
+    color: white;
+}
+
+.answer-tile p{
+    text-align: center;
 }
 
 /* info about hover shadowing: https://www.kirupa.com/html5/display_an_outline_instead_of_a_border_hover.htm */
@@ -153,7 +165,9 @@ fieldset{
 }
 .cover{
     width: 100%;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 0;
     margin: 0;
     background-position: center;
@@ -170,7 +184,7 @@ fieldset{
     font-weight: bold;
     text-align: center;
     border-radius: 20px;
-    background-color: green;
+    background-color: rgb(83, 126, 83);
     color: white;
 }
 
@@ -194,7 +208,7 @@ fieldset{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+}
   
   /* Modal Content/Box */
   .modal-content {
@@ -203,7 +217,7 @@ fieldset{
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
-  }
+}
   
   /* The Close Button */
   .close {
@@ -211,11 +225,42 @@ fieldset{
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
+}
   
   .close:hover,
   .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
+#result-img{
+    width: 45%;
+    height: 15%;
+}
+#result-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 640px) {
+
+    header ul li{
+        width: 90%;
+        padding-top: 30px;
+    }
+
+    header ul.flex-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .answers{
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    
+    }
+}
+

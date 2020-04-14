@@ -1,4 +1,39 @@
 
+$("input").click(function(){
+     selectType("colors");
+     selectType("activities");
+     selectType("office");
+     selectType("apparel");
+ });
+
+// function to get selected value
+// adapted from https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/
+function displayRadioValue() { 
+    var selected = $("input[type='radio']:checked");
+    var other = $("input[type='radio']:unchecked");
+      
+    for(i = 0; i < selected.length; i++) { 
+        if(ele[i].checked) 
+        document.getElementById("result").innerHTML
+                = "Gender: "+ele[i].value; 
+    } 
+}
+
+
+// colors, activities, office, apparel
+
+function selectType(type) {
+    var selected = $(`input[name='${type}']:checked`);
+    if (selected.length != 0) {
+        unselected = $(`input[name='${type}']:not(:checked)`);
+        selected.parent().parent().css({"background-color":"black","outline":"black solid 4px"});
+        unselected.parent().parent().css({"background-color":"grey","outline":"none"});
+        selected = null;
+    }
+}
+
+
+
 // Suggested in lab2 assignment
 $('#result-btn').on('click', function(e) {
     // gather all checked radio-button values
@@ -8,17 +43,18 @@ $('#result-btn').on('click', function(e) {
 
     // now you have an array of choices = ["valueofradiobox1", "valueofradiobox2", "valueofradiobox2"]
     // you'll need to do some calculations with this
-    // a naive approach would be to just choose the most common option - seems reasonable
+    // a naive approachf would be to just choose the most common option - seems reasonable
 
-    console.log(choices.length);
-    if (choices.length === 3){
+    console.log("length:" + choices.length);
+    console.log(choices);
+    if (choices.length == 4){
         console.log(mode(choices));
         // FIX - need to check if length of choices array is the same as num questions
         $("#full-phrase").text(getResultArray(mode(choices))[0]);
         $("#result-img").attr("src", getResultArray(mode(choices))[1]);
     } else{
         console.log("?s answered: " + choices.length);
-        console.log(getResultArray("error")[0]);
+        console.log(getResultArray("error"));
         $("#full-phrase").text(getResultArray("error")[0]);
 
     }
