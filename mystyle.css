@@ -56,6 +56,7 @@ input[type=radio]{
     display:none;
     color: white;
     padding: 0;
+    margin: 0;
 }
 div.spacer{
     padding: 10px;
@@ -83,25 +84,12 @@ nav {
      margin: 0;
  }
 
-.office-img{
-    width: 100%;
-    height: 75%;
-}
-
-.activity-img{
-    width: 100%;
-    height: 50%;
-}
-
-.apparel-img{
-    /* width:100%;
-    height:70%; */
-
-        float:  center;
-        max-width:  100%;
-        max-height: 100%;
-        background-size: cover;
-    
+/* adapted from https://stackoverflow.com/questions/11552380/how-to-automatically-crop-and-center-an-image */
+.center-cropped {
+    width: 200px;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 fieldset{
@@ -112,41 +100,13 @@ fieldset{
     width: 90%;
 }
 
-/* For Color tiles */
-#blue{
-    background-color: blue;
-    color: white;
-}
-#green{
-    background-color: green;
-    color: white;
-}
-#red{
-    background-color: red;
-    color: white;
-}
-#purple{
-    background-color: purple;
-    color: white;
-}
-#pink{
-    background-color: pink;
-    color: white;
-}
-#orange{
-    background-color: orange;
-    color: white;
-}
-#yellow{
-    background-color:rgb(224, 224, 0);
-    color: white;
-}
-
 
 .answer-tile{
-    width: 30%;
+    /* width: 30%; */
     /* height: 30%; */
-    /* height: max-content; */
+    /* height: min-content; */
+    /* width: min-content; */
+    box-sizing: border-box;
     margin: 10px;
     /* border: 10px; */
     display: flex;
@@ -159,6 +119,9 @@ fieldset{
 
 .answer-tile p{
     text-align: center;
+}
+.answer-tile img{
+    display:block;
 }
 
 /* info about hover shadowing: https://www.kirupa.com/html5/display_an_outline_instead_of_a_border_hover.htm */

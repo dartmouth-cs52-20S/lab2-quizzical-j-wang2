@@ -1,0 +1,185 @@
+{
+    "title": "Which of the Dartmouth 7 are you?",
+    "coverimg":"https://communications.dartmouth.edu/sites/communications.dartmouth.edu/files/20150806-nightcampussummer-01-eb.jpg",
+    "outcomes": {
+            "hanlon": {"img":"https://th.bing.com/th?id=OIP.4rSZrp27bXiJZz8qde_LSQHaEo&pid=Api&rs=1", "text": "President Hanlon's Lawn"},
+            "dartmouth-hall": {"img":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Dartmouth_College_campus_2007-06-23_Dartmouth_Hall_02.JPG/1920px-Dartmouth_College_campus_2007-06-23_Dartmouth_Hall_02.JPG", "text": "Dartmouth Hall"},
+            "50yard": {"img":"https://cdn7.dissolve.com/p/D145_223_245/D145_223_245_1200.jpg", "text":"The 50 yard line"},
+            "hop": {"img":"https://www.dartmouthalumnimagazine.com/sites/default/files/styles/photo_gallery/public/top-of-the-hop.jpg?itok=cHltOX4Q", "text":"The Top of the Hop"},
+            "bema": {"img":"https://farm8.staticflickr.com/7239/7178316688_fcde63a72e_z.jpg", "text":"BEMA"},
+            "stacks": {"img":"https://www.library.dartmouth.edu/sites/default/files/media-images/Stacks.jpg","text":"The Stacks"},
+            "green": {"img":"https://news.dartmouth.edu/sites/dart_news.prod/files/styles/slide/public/news/images/green-fall-orienteering-810.jpg?itok=z-ibrncS","text":"The Green"}
+    },
+    "questions": [
+        {
+            "question_name": "Where might you be found on a weeknight?",
+            "type": "activities",
+            "answers": [
+                {
+                    "text": "Frat row",
+                    "img_url": "https://th.bing.com/th?id=OIP.e-qIAkZsRu1jQXVLNZRV5AHaFC&pid=Api&rs=1",
+                    "outcome": "hanlon"
+                },
+                {
+                    "text": "Outdoors",
+                    "img_url": "https://doc.dartmouth.edu/mw/images/thumb/1/14/IMG_1449.jpg/300px-IMG_1449.jpg",
+                    "outcome": "bema"
+                },
+                {
+                    "text": "In the library",
+                    "img_url": "https://www.library.dartmouth.edu/sites/default/files/media-images/berry-hall-dartmouth.jpg",
+                    "outcome": "stacks"
+                },
+                {
+                    "text": "Listening to music",
+                    "img_url": "https://music.dartmouth.edu/sites/department_music.prod/files/styles/slide/public/dso.JPG?itok=HPCnkF11",
+                    "outcome": "hop"
+                },
+                {
+                    "text": "At practice",
+                    "img_url": "https://www.brockusa.com/wp-content/uploads/2017/05/Dartmouth-College-Memorial-Field.jpg",
+                    "outcome": "50yard"
+                },
+                {
+                    "text": "In the dorms",
+                    "img_url": "https://www.pcconstruction.com/assets/education-and-campus/DartmouthCollege-Hitchcock-002.jpg",
+                    "outcome": "dartmouth-hall"
+                },
+                {
+                    "text": "Other",
+                    "img_url": "https://www.liberaldictionary.com/wp-content/uploads/2018/11/other.png",
+                    "outcome": "green"
+                }
+
+            ]
+        },
+        {
+            "question_name": "Favorite character from the office?",
+            "type": "office",
+            "answers": [
+                {
+                    "text": "Michael",
+                    "img_url": "https://vignette2.wikia.nocookie.net/theoffice/images/0/02/Michael_Scott.jpg/revision/latest/scale-to-width-down/2000?cb=20170701090332",
+                    "outcome": "hanlon"
+                },
+                {
+                    "text": "Dwight",
+                    "img_url": "https://vignette.wikia.nocookie.net/theoffice/images/c/c5/Dwight_.jpg/revision/latest/scale-to-width-down/700?cb=20170701082424",
+                    "outcome": "bema"
+                },
+                {
+                    "text": "Jim",
+                    "img_url": "https://vignette.wikia.nocookie.net/theoffice/images/9/9a/Jim.jpg/revision/latest/scale-to-width-down/700?cb=20170701084550",
+                    "outcome": "stacks"
+                },
+                {
+                    "text": "Pam",
+                    "img_url": "https://vignette.wikia.nocookie.net/theoffice/images/6/67/Pam_Beesley.jpg/revision/latest/scale-to-width-down/700?cb=20170701084358",
+                    "outcome": "hop"
+                },
+                {
+                    "text": "Kelly",
+                    "img_url": "https://vignette.wikia.nocookie.net/theoffice/images/6/69/Kelly_Kapoor.jpg/revision/latest/scale-to-width-down/700?cb=20170701090501",
+                    "outcome": "50yard"
+                },
+                {
+                    "text": "Ryan",
+                    "img_url": "https://vignette.wikia.nocookie.net/theoffice/images/2/2d/Ryan_Howard.jpg/revision/latest/scale-to-width-down/700?cb=20170630190335",
+                    "outcome": "dartmouth-hall"
+                },
+                {
+                    "text": "Andy",
+                    "img_url": "https://vignette.wikia.nocookie.net/theoffice/images/2/20/C0164512-C4C2-485C-9CB6-85B31F642090.jpeg/revision/latest/scale-to-width-down/700?cb=20200103213101",
+                    "outcome": "green"
+                }
+
+            ]
+        },
+        {
+            "question_name": "Favorite piece of quintessential Dartmouth apparel?",
+            "type": "apparel",
+            "answers": [
+                {
+                    "text": "Patagonia fleece",
+                    "img_url": "https://content.backcountry.com/images/items/900/PAT/PAT3227/SNBL.jpg",
+                    "outcome": "hanlon"
+                },
+                {
+                    "text": "Bean boots",
+                    "img_url": "https://www.factorytwofour.com/wp-content/uploads/2014/10/Bean-Boot.jpg",
+                    "outcome": "dartmouth-hall"
+                },
+                {
+                    "text": "DP2 shirt",
+                    "img_url": "https://th.bing.com/th?id=OIP.fOHenrJhzZNjUMP7mx44QAHaEK&pid=Api&rs=1",
+                    "outcome": "50yard"
+                },
+                {
+                    "text": "Carhartt beanie",
+                    "img_url": "https://media.tractorsupply.com/is/image/TractorSupplyCompany/6307785?$456$",
+                    "outcome": "hop"
+                },
+                {
+                    "text": "Blundstones",
+                    "img_url": "https://www.stefanrtw.com/wp-content/uploads/2015/11/womens-blundstones.jpg",
+                    "outcome": "bema"
+                },
+                {
+                    "text": "'Class of' t-shirt",
+                    "img_url": "https://th.bing.com/th?id=OIP.DAVu2k63Eeh__2rkVcQDLgHaGc&pid=Api&rs=1",
+                    "outcome": "stacks"
+                },
+                {
+                    "text": "Canada Goose parka",
+                    "img_url": "https://content.backcountry.com/images/items/900/CDG/CDG3340/GRA.jpg",
+                    "outcome": "green"
+                }
+
+            ]
+        },
+        {
+            "question_name": "Favorite DDS location?",
+            "type": "dds",
+            "answers": [
+                {
+                    "text": "FOCO",
+                    "img_url": "https://snworksceo.imgix.net/drt/5f767317-c606-41b0-8df7-935af7e51b81.sized-1000x1000.JPG?w=1000",
+                    "outcome": "hanlon"
+                },
+                {
+                    "text": "Hop",
+                    "img_url": "https://snworksceo.imgix.net/drt/be3f4b71-71c6-4e69-a39c-ad94788934a1.sized-1000x1000.jpg?w=800",
+                    "outcome": "hop"
+                },
+                {
+                    "text": "Collis",
+                    "img_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Dartmouth_College_campus_2007-06-23_Collis_Center_03.JPG",
+                    "outcome": "green"
+                },
+                {
+                    "text": "Novack",
+                    "img_url": "https://home.dartmouth.edu/sites/home/files/styles/slide/public/2008-0009038275.jpg?itok=Q4Aw0ktu",
+                    "outcome": "50yard"
+                },
+                {
+                    "text": "KAF",
+                    "img_url": "https://snworksceo.imgix.net/drt/0fa6b28d-fe0e-48e2-814f-c07d2f1f9607.sized-1000x1000.jpg?w=800",
+                    "outcome": "dartmouth-hall"
+                },
+                {
+                    "text": "Ramekin",
+                    "img_url": "https://snworksceo.imgix.net/drt/6ff414cb-befe-4be3-8c65-9cdde91cf58a.sized-1000x1000.jpg?w=800",
+                    "outcome": "bema"
+                },
+                {
+                    "text": "The Cube",
+                    "img_url": "https://snworksceo.imgix.net/drt/ca400474-3448-4671-806f-d398eede66a0.sized-1000x1000.jpg?w=800",
+                    "outcome": "stacks"
+                }
+
+
+            ]
+        }
+
+    ]
+}
