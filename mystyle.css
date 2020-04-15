@@ -15,7 +15,7 @@
 }
 
 .flex-container.answers{
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
     width: 100%;
 }
